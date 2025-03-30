@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: green;
+}
+
+a{
+    padding-right: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+i{
+    color: white;
+    font-size:1rem;
+}
+
+.section-a{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient(to top, black, rgba(0, 0, 0, 0.473)), url(Contact/toppic.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageContainer{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem;
+}
+
+.sec-a-textHolder{
+    width: 500px;
+    padding: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+}
+
+h2{
+    padding-bottom: 1rem;
+}
+.section-b{
+    padding: 4rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px);
+    background-color: rgb(32, 32, 32);
+
+}
+
+.sec-b-inputDetails{
+    line-height: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+input{
+    width: 80%;
+    height: 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+textarea{
+    width: 80%;
+    height: 7rem;
+    color: white;
+    border: none;
+    resize: vertical;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+button{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    float: right;
+    margin-right: 3rem;
+    background-color: white;
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+.sec-b-contactDetails{
+    padding: 0px 2rem;
+    color: white;
+}
+
+.sec-b-h{
+    padding-bottom: 2rem;
+}
+.contactHolder{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.section-c{
+    margin-top: 2rem;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.sec-c-mapHolder{
+    width: 900px;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%; 
+}
+@media (max-width: 1024px) {
+
+}

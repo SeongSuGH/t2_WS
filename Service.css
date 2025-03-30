@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: green;
+}
+
+a{
+    padding-right: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+i{
+    color: white;
+    font-size:1rem;
+}
+.section-a{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient(to top, rgb(27, 27, 27), rgba(27, 27, 27, 0.473)), url(Service/top\ pic.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageContainer{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem;
+}
+
+.sec-a-textHolder{
+    width: 500px;
+    padding: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+h2{
+    padding-bottom: 1rem;
+}
+.sec-b-headerHolder{
+    margin:0rem 6rem;
+    height: 6rem;
+    padding: 1.5rem;
+    padding-left: 3rem;
+
+}
+
+.sec-b-boxHolder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    padding: 0 10rem;
+    gap: 3rem;
+    justify-content: space-evenly;
+}
+.sec-b-box{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+.sec-b-imageHolder{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-b-image{
+    width: 30%;
+    height: 30%;
+    object-fit:scale-down;
+
+}
+.sec-b-textHolder{
+    height: 50%;
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+}
+.sec-b-h2{
+    margin-top: 3rem;
+}
+.sec-b-description{
+    line-height: 1.5rem;
+    padding: 1rem .3rem;
+}
+
+@media (max-width:1024px) {
+    .sec-b-boxHolder{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 460px;
+        padding: 0 10rem;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media (max-width:700px) {
+    
+
+    .sec-b-boxHolder{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 460px;
+    }
+}
